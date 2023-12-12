@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Bosh Sahifa {% endblock%}
+
+{% block content %}
+<div class=" container_cards">
+    {% for i in sctg %}
+     <div class="row row-cols-1 row-cols-md-2 g-4" style="justify-content: space-around;padding-top: 60px;padding-bottom: 50px;padding-right: 20px;padding-left: 20px;">
+    <div class="card col-3" style="width: 18rem;">
+        <img src="{{ i.image.url }}" class="" alt="bu rasm topilmadi">
+        <div class="card-body">
+            <h5 class="card-title">{{ i.name }}</h5>
+            <p class="title">CEO & Founder, Example</p>
+            <p class="card-text">{{ i.text }}</p>
+            <a href="{% url 'work' id=i.id %}" class="btn btn-primary">Ishlar</a>
+        </div>
+    </div>
+    </div>
+    </div>
+     {% endfor %}
+</div>
+
+
+{% endblock %}

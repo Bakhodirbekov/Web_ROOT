@@ -1,0 +1,20 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Success Page {% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card mt-5">
+          <div class="card-body">
+            <h2 class="text-center mb-4 text-success">Form Submission Successful!</h2>
+            <p class="text-center">Thank you, {{ instance.full_name }} for submitting your application.</p>
+            <p class="text-center">Phone Number: {{ instance.phone_number }}</p>
+            <!-- You can display other information as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

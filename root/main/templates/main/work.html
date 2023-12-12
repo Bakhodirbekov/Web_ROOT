@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Bosh Sahifa {% endblock%}
+
+{% block content %}
+<div class="container-w-card" style="display: flex;
+    flex-direction: row;
+    align-items: baseline;">
+    {% for i in wctg %}
+    <div class="card" style="width: 18rem;">
+  <img src="{{ i.image.url }}" class="card-img-top" alt="...">
+  <div class="card-body" style="text-align: center;">
+    <h5 class="card-title">{{ i.name }}</h5>
+      <p class="title">{{ i.title }}</p>
+    <p class="card-text">{{ i.text }}</p>
+  </div>
+  <ul class="list-group list-group-flush" style="    text-align: center;">
+      <p class="item-price"><span><i>Oylik : </i>{{ i.salary }}</span></p>
+    <li class="list-group-item"><i>Qabul : </i>{{ i.status }}</li>
+      <li class="list-group-item">{{ i.vaqti }}</li>
+  </ul>
+  <div class="card-body">
+    <a href="{% url 'registor_file' %}" class="btn btn-primary">Yuborish</a>  </div>
+</div>
+    {% endfor %}
+    </div>
+{% endblock %}
+

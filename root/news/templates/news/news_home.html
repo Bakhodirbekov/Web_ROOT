@@ -1,0 +1,71 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %} Bosh Sahifa {% endblock%}
+
+{% block content %}
+
+           <!-- Header-->
+            <header class="bg-dark py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Удобная работа только на Root</h1>
+                                <p class="lead fw-normal text-white-50 mb-4">Легкое решение для удобных вакансий и поиска работы в Root и удобное для отправки резюме</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#https://t.me/UserResumeBot">Telegram</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="{% url 'contact' %}">Контакты</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{% static 'main/logo/bisnes.jpg' %}" alt="qidiruvda" /></div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Blog preview section-->
+            <div class="container-news">
+                {% for i in news %}
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <div class="text-center">
+                                <h2 class="fw-bolder" style="color:#fff;">Новости о вакансиях</h2>
+                                <p class="lead fw-normal text-muted mb-5" style="color: #adb5bd;">Все сообщения меняются в режиме онлайн, и вы будете в курсе</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-news-card">
+                        {% for i in news %}
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="{{ i.img }}" alt="Image Description" />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">{{ i.title }}</div>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">{{ el.anons }}</h5></a>
+                                    <p class="card-text mb-0">{{ i.full_text }}</p>
+                                </div>
+                                <dic class = "container-card"></dic>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="small">
+                                                <div class="fw-bold">Келли Роуэн</div>
+                                                <div class="text-muted">{{ i.data }} &middot; 6 мин читать</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                 {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                    </div>
+            </section>
+                {% endfor %}}
+                </div>
+{% endblock %}

@@ -1,0 +1,187 @@
+body{
+      background-image: radial-gradient(#483a3a, #575445);
+}
+.row{
+color: #212529
+}
+.row img {
+width: 100%;
+}
+
+
+
+main {
+    padding-bottom: 30px;
+    padding-top: 60px;
+    background-image: radial-gradient(#541f1f, #577491);
+}
+.custom-card {
+    width: 18rem;
+    margin: 20px;
+}
+
+.custom-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .custom-card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+a.btn.btn-primary {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+.card-title {
+    color:##3A4D39;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-text {
+    color:#765827;
+    font-family: 'Brass Mono', monospace;
+    font-size: 18px; /* O'zgartirishingiz mumkin */
+    font-weight: normal; /* Agar kerak bo'lsa bold ornatishingiz mumkin */
+}
+
+
+
+
+
+.semi-italic {
+    font-weight: 600;
+    font-style: italic;
+    font-weight: 600; font-style: bold;
+}
+
+.card img {
+   height: 175px;
+}
+
+
+
+
+.nav-link {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: #007bff; /* Change the hover color as needed */
+}
+
+.nav-link i{
+    margin: 5px;
+
+
+}
+.nav-link {
+
+font-family: "Times New Roman", Times, serif;
+font-size: 18px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #08365C;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
+
+}
+
+.semi-italic{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 25px;
+letter-spacing: 0px;
+word-spacing: -0.6px;
+color: #39414C;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: small-caps;
+text-transform: capitalize;
+}
+
+.fw-bolder {
+ont-family: "Arial Black", Gadget, sans-serif;
+font-size: 38px;
+letter-spacing: 0.4px;
+word-spacing: 2px;
+color: #08365C;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: small-caps;
+text-transform: uppercase;
+}
+
+.fs-4{
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 38px;
+letter-spacing: 0.4px;
+word-spacing: 2px;
+color: #39414C;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: italic;
+font-style: italic
+}
+
+.h5 {
+color : #a4b6c8;
+}
+
+.fw-bolder_lu {
+font-size: 20px;
+padding-bottom: 30px;
+padding-top: 30px;
+}
+
+.col-xl-9 {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    width: 720px;
+
+}
+
+  /* Styling for the select element */
+.bfh-countries {
+    padding: 10px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Border color, adjust as needed */
+    border-radius: 5px; /* Adjust border radius as needed */
+    width: 200px; /* Adjust width as needed */
+}
+/* Styling for the phone input element */
+.bfh-phone {
+    padding: 10px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Border color, adjust as needed */
+    border-radius: 5px; /* Adjust border radius as needed */
+    width: 200px; /* Adjust width as needed */
+}
+
+.text-white {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 25px;
+letter-spacing: 0px;
+word-spacing: -0.6px;
+color: #39414C;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: small-caps;
+text-transform: uppercase;
+}
+
+
+/*  caruselll */
+
